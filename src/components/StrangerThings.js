@@ -19,6 +19,7 @@ const upsideDownConfig = {
 };
 
 console.log(process.env.IN_DEVELOPMENT);
+console.log(process.env.REACT_APP_HAWKINS_URL);
 const dev = /^true$/.test(process.env.IN_DEVELOPMENT);
 console.log(dev);
 
