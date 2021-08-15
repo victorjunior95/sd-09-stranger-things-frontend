@@ -22,7 +22,7 @@ const {
   REACT_APP_HAWKINS_TIMEOUT,
   REACT_APP_UPSIDEDOWN_URL,
   REACT_APP_UPSIDEDOWN_TIMEOUT,
-  IN_DEVELOPMENT,
+  DEVOPS,
 } = process.env;
 
 console.log({
@@ -30,9 +30,9 @@ console.log({
   REACT_APP_HAWKINS_TIMEOUT,
   REACT_APP_UPSIDEDOWN_URL,
   REACT_APP_UPSIDEDOWN_TIMEOUT,
-  IN_DEVELOPMENT,
+  DEVOPS,
 });
-const dev = /^true$/.test(process.env.IN_DEVELOPMENT);
+const dev = /^true$/.test(DEVOPS);
 console.log(dev);
 
 const charactersService = new CharactersService(strangerThingsConfig);
