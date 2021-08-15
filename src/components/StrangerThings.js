@@ -17,22 +17,9 @@ const upsideDownConfig = {
   url: process.env.REACT_APP_UPSIDEDOWN_URL,
   timeout: process.env.REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
-const {
-  REACT_APP_HAWKINS_URL,
-  REACT_APP_HAWKINS_TIMEOUT,
-  REACT_APP_UPSIDEDOWN_URL,
-  REACT_APP_UPSIDEDOWN_TIMEOUT,
-  DEVOPS,
-} = process.env;
 
-console.log({
-  REACT_APP_HAWKINS_URL,
-  REACT_APP_HAWKINS_TIMEOUT,
-  REACT_APP_UPSIDEDOWN_URL,
-  REACT_APP_UPSIDEDOWN_TIMEOUT,
-  DEVOPS,
-});
-const dev = /^true$/.test(DEVOPS);
+console.log(process.env);
+const dev = /^true$/.test(process.env.IN_DEVELOPMENT);
 console.log(dev);
 
 const charactersService = new CharactersService(strangerThingsConfig);
