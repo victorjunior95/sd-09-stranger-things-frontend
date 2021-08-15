@@ -17,9 +17,21 @@ const upsideDownConfig = {
   url: process.env.REACT_APP_UPSIDEDOWN_URL,
   timeout: process.env.REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
+const {
+  REACT_APP_HAWKINS_URL,
+  REACT_APP_HAWKINS_TIMEOUT,
+  REACT_APP_UPSIDEDOWN_URL,
+  REACT_APP_UPSIDEDOWN_TIMEOUT,
+  IN_DEVELOPMENT,
+} = process.env;
 
-console.log(process.env.IN_DEVELOPMENT);
-console.log(process.env.REACT_APP_HAWKINS_URL);
+console.log({
+  REACT_APP_HAWKINS_URL,
+  REACT_APP_HAWKINS_TIMEOUT,
+  REACT_APP_UPSIDEDOWN_URL,
+  REACT_APP_UPSIDEDOWN_TIMEOUT,
+  IN_DEVELOPMENT,
+});
 const dev = /^true$/.test(process.env.IN_DEVELOPMENT);
 console.log(dev);
 
