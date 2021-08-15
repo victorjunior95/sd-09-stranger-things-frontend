@@ -18,10 +18,6 @@ const upsideDownConfig = {
   timeout: process.env.REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
 
-console.log(process.env);
-const dev = /^true$/.test(process.env.REACT_APP_IN_DEVELOPMENT);
-console.log(dev);
-
 const charactersService = new CharactersService(strangerThingsConfig);
 const charactersUpsideDownService = new CharactersService(upsideDownConfig);
 
@@ -121,6 +117,7 @@ class StrangerThings extends React.Component {
     const {
       hereIsTheUpsideDownWorld, characterName, characters, page,
     } = this.state;
+    const dev = /^true$/.test(process.env.REACT_APP_IN_DEVELOPMENT);
     return (
       <div
         className={ `reality ${getRealityClass(
