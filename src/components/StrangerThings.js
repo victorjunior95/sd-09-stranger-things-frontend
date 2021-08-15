@@ -19,7 +19,7 @@ const upsideDownConfig = {
 };
 
 console.log(process.env);
-const dev = /^true$/.test(process.env.IN_DEVELOPMENT);
+const dev = /^true$/.test(process.env.REACT_APP_IN_DEVELOPMENT);
 console.log(dev);
 
 const charactersService = new CharactersService(strangerThingsConfig);
