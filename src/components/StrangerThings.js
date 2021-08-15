@@ -7,6 +7,7 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
 );
 
 require('dotenv').config();
+
 const strangerThingsConfig = {
   url: process.env.REACT_APP_HAWKINS_URL,
   timeout: process.env.REACT_APP_HAWKINS_TIMEOUT,
