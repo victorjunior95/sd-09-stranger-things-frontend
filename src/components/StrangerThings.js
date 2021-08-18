@@ -141,6 +141,7 @@ class StrangerThings extends React.Component {
               Página atual:
               {page}
             </p>
+            <p>a</p>
           </div>
           <div>
             <button type="button" onClick={ this.previousPage }>Anterior</button>
