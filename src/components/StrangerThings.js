@@ -8,12 +8,12 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
 
 require('dotenv').config();
 
-const { 
+const {
   REACT_APP_HAWKINS_URL,
   REACT_APP_UPSIDEDOWN_URL,
   REACT_APP_HAWKINS_TIMEOUT,
-  REACT_APP_UPSIDEDOWN_TIMEOUT
-} = process.env
+  REACT_APP_UPSIDEDOWN_TIMEOUT,
+} = process.env;
 
 const strangerThingsConfig = {
   url: REACT_APP_HAWKINS_URL,
