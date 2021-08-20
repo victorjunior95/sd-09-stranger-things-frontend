@@ -17,11 +17,11 @@ const {
 
 const strangerThingsConfig = {
   url: REACT_APP_HAWKINS_URL,
-  timeout: REACT_APP_UPSIDEDOWN_URL,
+  timeout: REACT_APP_HAWKINS_TIMEOUT,
 };
 
 const upsideDownConfig = {
-  url: REACT_APP_HAWKINS_TIMEOUT,
+  url: REACT_APP_UPSIDEDOWN_URL,
   timeout: REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
 
